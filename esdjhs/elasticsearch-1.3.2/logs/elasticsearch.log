@@ -59,3 +59,5 @@
 [2015-06-30 19:01:53,348][INFO ][cluster.metadata         ] [Tempus] [advisor] creating index, cause [api], shards [5]/[1], mappings []
 [2015-06-30 19:01:53,769][INFO ][cluster.metadata         ] [Tempus] [advisor] create_mapping [modelresult]
 [2015-06-30 19:01:54,449][INFO ][cluster.metadata         ] [Tempus] [advisor] update_mapping [modelresult] (dynamic)
+[2015-06-30 20:14:30,784][INFO ][cluster.metadata         ] [Tempus] [posts] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2015-06-30 20:14:32,269][INFO ][cluster.metadata         ] [Tempus] [posts] update_mapping [blog] (dynamic)
