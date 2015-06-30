@@ -3,3 +3,4 @@ venv
 staticfiles
 .idea
 .impl
+*elasticsearch-1.3.2*

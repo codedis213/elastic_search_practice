@@ -4,6 +4,8 @@ class Company(models.Model):
     company_name = models.CharField(max_length=256)
     doing_business_as_name = models.CharField(max_length=256)
     full_address = models.CharField(max_length=256)
+    latitude = models.FloatField(null=True)
+    longitude = models.FloatField(null=True)
 
     def __unicode__(self):
         return self.company_name
