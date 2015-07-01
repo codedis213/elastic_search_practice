@@ -7,7 +7,9 @@ class AdvisorIndex(indexes.SearchIndex, indexes.Indexable):
     first_name = indexes.CharField(model_attr='first_name')
     last_name = indexes.CharField(model_attr='last_name')
     crd = indexes.IntegerField(model_attr='crd')
+    location = indexes.LocationField(model_attr='company__geo_location', null=True)
     modified = indexes.DateTimeField(model_attr='modified')
+
 
     def get_model(self):
         return Advisor

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.gis.geos import Point
 
 class Company(models.Model):
     company_name = models.CharField(max_length=256)
@@ -6,6 +7,10 @@ class Company(models.Model):
     full_address = models.CharField(max_length=256)
     latitude = models.FloatField(null=True)
     longitude = models.FloatField(null=True)
+
+    @property
+    def geo_location(self):
+        return Point(self.longitude, self.latitude) if self.latitude and self.longitude else None
 
     def __unicode__(self):
         return self.company_name
