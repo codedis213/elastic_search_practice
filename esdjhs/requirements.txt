@@ -112,7 +112,7 @@ sqltap==0.3.8
 static3==0.5.1
 system-service==0.1.6
 uritemplate==0.6
-urllib3==1.10.4
+urllib3==1.26.5
 wheel==0.24.0
 wsgiref==0.1.2
 xdiagnose==3.6.3build2
