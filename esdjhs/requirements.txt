@@ -1,5 +1,5 @@
 Authomatic==0.0.13
-Babel==1.3
+Babel==2.9.1
 Django==1.7.1
 Flask==0.10.1
 Flask-Babel==0.9
